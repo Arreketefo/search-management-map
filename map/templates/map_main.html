@@ -1,0 +1,15 @@
+{% load static %}
+<!DOCTYPE html>
+<html style="height: 100%">
+    <head>
+        <title>Search Map</title>
+        <base href="/static/" />
+        <link rel="stylesheet" href="map.css">
+        <script type="module" src="map.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body style="height: 100%">
+	{% csrf_token %}
+    <input type="hidden" value="{% if mission == 'all' or mission == 'current' %}{{ mission }}{% else %}{{ mission.pk }}{% endif %}" name="missionId" id="missionId" />
+    </body>
+</html>

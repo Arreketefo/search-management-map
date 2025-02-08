@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html style="height: 100%">
+    <head>
+        <title>{{ mission.mission_name }} - Timeline</title>
+        <base href="/static/" />
+        <link rel="stylesheet" href="mission/timeline.css">
+        <script src="mission/timeline.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body style="height: 100%">
+        {% csrf_token %}
+        <div id='root'></div>
+    </body>
+    <script>
+        createMissionTimeline('root', {{ mission.pk }})
+    </script>
+</html>
+

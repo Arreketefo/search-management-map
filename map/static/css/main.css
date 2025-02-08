@@ -1,0 +1,22 @@
+.leaflet-container {
+        width: 100%;
+        height: 100%;
+}
+
+
+.fa-arrows-alt, .fa-arrows-alt-h {
+	color: #666;
+}
+
+.form-inline > * {
+   margin:5px 3px;
+}
+
+
+.poi-label, .poi-lat-label, .poi-lng-label {
+   font-weight: 700 !important;
+}
+
+.image-label, .image-lat-label, .image-lng-label {
+   font-weight: 700 !important;
+}
