@@ -8,3 +8,4 @@ RUN rm -fr /code/smm/local_settings.py /code/venv
 RUN NODE_DONE=yes ./setup-venv.sh
 
 ENTRYPOINT ["/code/docker/app/start.sh"]
+test
