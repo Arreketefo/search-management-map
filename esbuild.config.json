@@ -1,0 +1,30 @@
+{
+    "entry": [
+        "frontend/map.js",
+        "frontend/marinesac.js",
+        "frontend/marinevectors.js",
+        "frontend/pretty.js",
+        "frontend/asset/ui.js",
+        "frontend/asset/list.js",
+        "frontend/asset/type_list.js",
+        "frontend/icons/list.js",
+        "frontend/mission/list.js",
+        "frontend/mission/timeline.js",
+        "frontend/mission/asset/status.js",
+        "frontend/search/details.js",
+        "frontend/usergeo/details.js",
+        "frontend/organization/list.js",
+        "frontend/organization/details.js",
+        "frontend/organization/radio-operator.js",
+        "frontend/menu/topbar.js"
+    ],
+    "bundle": true,
+    "minify": true,
+    "outdir": "dist",
+    "loader": {
+        ".js": "jsx",
+        ".png": "file",
+        ".ttf": "file",
+        ".woff2": "file"
+    }
+}

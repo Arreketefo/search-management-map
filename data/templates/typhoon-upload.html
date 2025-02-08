@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <base href="/static/" />
+    <link rel="stylesheet" href="pretty.css">
+    <script type="module" src="pretty.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<form method="post" enctype="multipart/form-data">
+{% csrf_token %}
+<table>
+{{form}}
+</table>
+<input type="submit" class="btn btn-primary" />
+</form>
+</body>
+</html>
